@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://t4lv37ymmafn"]
+
+[ext_resource type="SpriteFrames" uid="uid://dlo67cf10nftm" path="res://assets/defaultAnimation.tres" id="1_devkm"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+scale = Vector2(1, 1.0000002)
+sprite_frames = ExtResource("1_devkm")
+animation = &"jump"

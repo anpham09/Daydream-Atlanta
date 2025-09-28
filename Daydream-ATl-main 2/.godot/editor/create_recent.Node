@@ -1,0 +1,12 @@
+CanvasLayer
+Sprite2D
+Panel
+HBoxContainer
+PanelContainer
+AnimatedSprite2D
+Node2D
+Node
+AnimationPlayer
+TextureRect
+CollisionShape2D
+CharacterBody2D
