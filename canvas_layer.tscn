@@ -1,0 +1,61 @@
+[gd_scene load_steps=2 format=3 uid="uid://vbhs4ye7yxqa"]
+
+[ext_resource type="Texture2D" uid="uid://csp4awflm430f" path="res://assets/sprites copy/heart pixel art 16x16 copy.png" id="1_c4rma"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+offset_left = 34.0
+offset_top = 20.0
+offset_right = 489.0
+offset_bottom = 90.0
+
+[node name="heart" type="TextureRect" parent="HBoxContainer"]
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="HBoxContainer/heart"]
+position = Vector2(18.5, 25)
+scale = Vector2(1.8125, 1.7500001)
+texture = ExtResource("1_c4rma")
+
+[node name="heart2" type="TextureRect" parent="HBoxContainer"]
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="HBoxContainer/heart2"]
+position = Vector2(-12, 26)
+scale = Vector2(1.8793948, 1.8359377)
+texture = ExtResource("1_c4rma")
+
+[node name="heart3" type="TextureRect" parent="HBoxContainer"]
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="HBoxContainer/heart3"]
+position = Vector2(-42.83162, 26.135534)
+scale = Vector2(1.8539524, 1.8580585)
+texture = ExtResource("1_c4rma")
+
+[node name="heart4" type="TextureRect" parent="HBoxContainer"]
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="HBoxContainer/heart4"]
+position = Vector2(-72.00001, 27.000002)
+scale = Vector2(1.8853409, 1.9478402)
+texture = ExtResource("1_c4rma")
+
+[node name="heart5" type="TextureRect" parent="HBoxContainer"]
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+expand_mode = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="HBoxContainer"]
+position = Vector2(155, 27)
+scale = Vector2(1.7912169, 1.9159299)
+texture = ExtResource("1_c4rma")
