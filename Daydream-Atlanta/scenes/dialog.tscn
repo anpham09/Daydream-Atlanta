@@ -1,0 +1,58 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0ebiq37hjtf"]
+
+[ext_resource type="FontFile" uid="uid://js78wjypxcro" path="res://assets/fonts copy/PixelOperator8.ttf" id="1_pkx4w"]
+[ext_resource type="Script" uid="uid://kmnepfsu4wax" path="res://scripts/minuspointbutton.gd" id="2_36pgd"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -4.0
+offset_top = -149.0
+offset_right = 7.0
+offset_bottom = -130.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 66.0
+offset_right = 165.0
+offset_bottom = 135.0
+color = Color(0.4757939, 0.3076348, 0.03997355, 1)
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 95.0
+offset_right = 149.0
+offset_bottom = 111.0
+theme_override_fonts/font = ExtResource("1_pkx4w")
+theme_override_font_sizes/font_size = 8
+text = "Give up bricks"
+script = ExtResource("2_36pgd")
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 114.0
+offset_right = 149.0
+offset_bottom = 130.0
+theme_override_fonts/font = ExtResource("1_pkx4w")
+theme_override_font_sizes/font_size = 8
+text = "FIGHT!"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 71.0
+offset_right = 176.0
+offset_bottom = 90.0
+theme_override_fonts/font = ExtResource("1_pkx4w")
+theme_override_font_sizes/font_size = 8
+text = "Give up 1 brick or 
+fight with the wolf?"
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
