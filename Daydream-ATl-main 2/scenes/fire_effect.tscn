@@ -1,0 +1,74 @@
+[gd_scene load_steps=11 format=3 uid="uid://dn5sp53bbwslk"]
+
+[ext_resource type="Texture2D" uid="uid://qkckieto3wxq" path="res://assets/Group 4 - 1/Group 4 - 1.png" id="1_7u7bu"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_30xl0"]
+atlas = ExtResource("1_7u7bu")
+region = Rect2(0, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ax7f7"]
+atlas = ExtResource("1_7u7bu")
+region = Rect2(32, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_igtrj"]
+atlas = ExtResource("1_7u7bu")
+region = Rect2(64, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3dhrs"]
+atlas = ExtResource("1_7u7bu")
+region = Rect2(96, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6cgck"]
+atlas = ExtResource("1_7u7bu")
+region = Rect2(128, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jeyq7"]
+atlas = ExtResource("1_7u7bu")
+region = Rect2(160, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_au1ma"]
+atlas = ExtResource("1_7u7bu")
+region = Rect2(192, 0, 32, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3t0a2"]
+atlas = ExtResource("1_7u7bu")
+region = Rect2(224, 0, 32, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4lbfg"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_30xl0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ax7f7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_igtrj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3dhrs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6cgck")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jeyq7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_au1ma")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3t0a2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="Fire Effect" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_4lbfg")
+autoplay = "default"
+frame_progress = 0.21596563
