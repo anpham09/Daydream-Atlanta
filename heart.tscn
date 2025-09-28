@@ -1,0 +1,54 @@
+[gd_scene load_steps=7 format=3 uid="uid://ca2hpmk026d3s"]
+
+[ext_resource type="Texture2D" uid="uid://c8erwcf381a26" path="res://assets/sprites copy/HealthUI.png" id="1_cixvg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7p8dj"]
+atlas = ExtResource("1_cixvg")
+region = Rect2(0, 0, 11, 11)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pembh"]
+atlas = ExtResource("1_cixvg")
+region = Rect2(0, 11, 11, 11)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bjxl8"]
+atlas = ExtResource("1_cixvg")
+region = Rect2(22, 11, 11, 11)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7j81i"]
+atlas = ExtResource("1_cixvg")
+region = Rect2(22, 22, 11, 11)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lk003"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7p8dj")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pembh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bjxl8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7j81i")
+}, {
+"duration": 1.0,
+"texture": null
+}],
+"loop": true,
+"name": &"lose",
+"speed": 5.0
+}]
+
+[node name="heart" type="AnimatedSprite2D"]
+position = Vector2(1638, 1018.0001)
+scale = Vector2(393.8182, 314.7273)
+sprite_frames = SubResource("SpriteFrames_lk003")
+animation = &"idle"
+autoplay = "idle"
